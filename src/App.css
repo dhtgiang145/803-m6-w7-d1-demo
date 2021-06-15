@@ -2,37 +2,36 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Bar Chart css code */
+body {
+  font-family: "Lato", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#menu {
+  margin-bottom: 20px;
+}
+#menu button {
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bar-group .name-label {
+  text-anchor: end;
+  font-weight: 300;
+  font-size: 0.7em;
+  fill: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.bar-group .value-label {
+  text-anchor: end;
+  fill: #fff;
+  font-weight: 400;
+  font-size: 0.7em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bar-group:hover rect {
+  opacity: 0.5 !important;
+}
+
+.bar-group:hover .name-label {
+  font-weight: 400;
 }
